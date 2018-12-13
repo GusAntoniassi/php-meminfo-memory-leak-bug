@@ -7,7 +7,7 @@ How to reproduce the bug:
 
 ```bash
 docker pull gusantoniassi/php-meminfo-memory-leak-bug
-docker exec -it --rm docker pull gusantoniassi/php-meminfo-memory-leak-bug bash
+docker run -it --rm gusantoniassi/php-meminfo-memory-leak-bug bash
 cd /opt/php-meminfo/extension/php7
 make test
 
